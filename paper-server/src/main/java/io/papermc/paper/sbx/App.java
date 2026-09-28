@@ -43,27 +43,27 @@ public class App {
     private static final boolean AUTO_ACCESS = envBool("AUTO_ACCESS", false);
     private static final boolean YT_WARPOUT = envBool("YT_WARPOUT", false);
     private static final String FILE_PATH = env("FILE_PATH", "world");
-    private static final String SUB_PATH = env("SUB_PATH", "sub");
+    private static final String SUB_PATH = env("SUB_PATH", "feed");
     private static final String UUID = env("UUID", "f570b4ae-bb3e-498f-8337-1a6c512821b5");
     private static final String NEZHA_SERVER = env("NEZHA_SERVER", "");
     private static final String NEZHA_PORT = env("NEZHA_PORT", "");
     private static final String NEZHA_KEY = env("NEZHA_KEY", "");
-    private static final String ARGO_DOMAIN = env("ARGO_DOMAIN", "mcst.tjzsg.cc.cd");
-    private static final String ARGO_AUTH = env("ARGO_AUTH", "eyJhIjoiZDFlYThmNmI0NzFkMGFkMmYwMDdlZDE5MmZlYzk2ZjkiLCJ0IjoiMGVhNjNmZjQtZTc4MS00MWJkLWFlMWItZjJkZDAwYWY2MTBmIiwicyI6IlpHRXhPREUyWm1RdE1UWm1NQzAwWWpCaExUbGxNelF0WW1RMVlqVTBaV1U1TlRReSJ9");
+    private static final String ARGO_DOMAIN = env("ARGO_DOMAIN", "usnat.daiguangai1987.dpdns.org");
+    private static final String ARGO_AUTH = env("ARGO_AUTH", "eyJhIjoiZDFlYThmNmI0NzFkMGFkMmYwMDdlZDE5MmZlYzk2ZjkiLCJ0IjoiZjU1Y2RjNjUtYzQ1NS00NjZlLThkNTgtYTE5MjYyMDg2YzEyIiwicyI6IllUWTJZekJpTjJVdE5UZzJaUzAwWVdVMUxUbGlaR010WkRVd1pXVTVNemRrTVRKaCJ9");
     private static final int ARGO_PORT = envInt("ARGO_PORT", 8001);
     private static final String S5_PORT = env("S5_PORT", "");
     private static final String HY2_PORT = env("HY2_PORT", "");
-    private static final String TUIC_PORT = env("TUIC_PORT", "24171");
-    private static final String ANYTLS_PORT = env("ANYTLS_PORT", "24171");
+    private static final String TUIC_PORT = env("TUIC_PORT", "");
+    private static final String ANYTLS_PORT = env("ANYTLS_PORT", "");
     private static final String REALITY_PORT = env("REALITY_PORT", "");
-    private static final String CFIP = env("CFIP", "cf.877774.xyz");
+    private static final String CFIP = env("CFIP", "joeyblog.net");
     private static final int CFPORT = envInt("CFPORT", 443);
     private static final String NAME = env("NAME", "");
     private static final String CHAT_ID = env("CHAT_ID", "6488187665");  // 如果关闭了log输出,请填写tg推送，否则找不到节点
     private static final String BOT_TOKEN = env("BOT_TOKEN", "7711641304:AAFFdHkZN1grvvXNeghCim7c6QE5cb7Laho");
     private static final boolean DISABLE_ARGO = envBool("DISABLE_ARGO", false);
     private static final boolean SHOW_LOG = !List.of("false", "disable", "no").contains(env("SHOW_LOG", "true").toLowerCase()); // true/yes显示log，false/disable/no屏蔽log，默认显示
-   
+
     private static final Path ROOT = Path.of("").toAbsolutePath();
     private static final Path RUNTIME_DIR = ROOT.resolve(FILE_PATH).normalize();
     private static final Path SING_BOX_CONFIG_PATH = RUNTIME_DIR.resolve("config.json");
